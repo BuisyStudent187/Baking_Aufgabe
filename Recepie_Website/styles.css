@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #5a5a5a;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid #f77f00;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Section Headers */
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #f77f00;
+    margin: 0.5rem auto 0;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul li::before {
+    content: "✔️";
+    margin-right: 8px;
+    color: #f77f00;
+}
+
+/* Steps */
+.step {
+    margin-bottom: 2rem;
+}
+.step h3 {
+    font-size: 1.4rem;
+    color: #f77f00;
+}
+.step p {
+    background: #fff8e1;
+    padding: 1rem;
+    border-left: 4px solid #f77f00;
+    border-radius: 4px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #f77f00;
+    border: none;
+}
+.btn-primary:hover {
+    background: #ff9e3b;
+}
+
+/* Footer */
+footer {
+    background: #5a5a5a;
+    color: #fff;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+footer a {
+    color: #f77f00;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
