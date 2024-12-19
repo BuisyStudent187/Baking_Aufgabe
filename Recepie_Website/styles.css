@@ -1,5 +1,39 @@
+@font-face {
+    font-family: 'Product Sans Black';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Product Sans Black'), url('https://fonts.cdnfonts.com/s/14955/ProductSans-BlackItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Product Sans Medium'), url('https://fonts.cdnfonts.com/s/14955/ProductSans-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Product Sans'), url('https://fonts.cdnfonts.com/s/14955/ProductSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Product Sans Light'), url('https://fonts.cdnfonts.com/s/14955/ProductSans-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Product Sans Thin';
+    font-style: normal;
+    font-weight: 250;
+    src: local('Product Sans Thin'), url('https://fonts.cdnfonts.com/s/14955/ProductSans-Thin.woff') format('woff');
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('pictures/oben.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,26 +44,39 @@ h1, h2, h3 {
     color: #ffffff;
 }
 
-.hero {
-    padding: 60px;
-    text-align: center;
+.title {
+    padding: 1px;
+    text-align:center;
     background: #00000083;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 30px;
+    margin-top: -8px;
+    padding-bottom: 15px;
 }
-.hero h1 {
-    font-size: 2.5rem;
+.title h1 {
+    font-family:'Product Sans';
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
-.hero p {
-    font-size: 1.2rem;
+
+.navBar a {
+    font-family: 'Product Sans';
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 2px;
+    margin: -3px;
+    padding: 10px;
+    text-decoration: none;
 }
 
 section h2 {
+    font-family: 'Product Sans Medium';
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: 1.8rem;
     position: relative;
+    
 }
 section h2::after {
     content: '';
@@ -39,45 +86,107 @@ section h2::after {
     background: #ffffff;
     margin: 0.5rem auto 0;
 }
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
+.ingredients {
+    display: flex;
+    justify-content: space-around;
 }
 
-.step {
-    margin-bottom: 2rem;
+
+.ingrList {
+    background: #00000060;
+    border-color: #ffffff57;
+    border-style: solid;
+    border-width: 1px;
+    width:500px;
+    height: 350px;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    position:static;
+    
 }
-.step h3 {
-    font-size: 1.4rem;
+
+.ingrList h3 {
+    font-family: 'Product Sans';
+    font-size: 1.5rem;
     color: #ffffff;
+    margin-left: 1rem;
+    
 }
-.step p {
-    background: #ffffff45;
+
+.ingrList li {
+    text-align: left;
+    margin-top: -30px;
+    font-family: 'Product Sans Light';
+    font-size: 1.5rem;
+    color: #ffffff;
     padding: 1rem;
-    border-left: 4px solid #ffffff;
-    border-radius: 4px;
+    padding-right: 2rem;
+    list-style-type: none;
 }
 
-.step img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 1rem auto;
-    border: 2px solid #f77f00;
-    border-radius: 8px;
+.toolsList ul {
+    background: #00000060;
+    border-color: #ffffff57;
+    border-style: solid;
+    border-width: 1px;
+    width:500px;
+    height: 350px;
+    margin-left: 10rem;
+        margin-bottom: 1rem;
+    border-radius: 5px;
+    padding-top: 50px;
 }
 
-.btn-primary {
-    background: #f77f00;
-    border: none;
+.toolsList li {
+    text-align: left;
+    margin-top: -30px;
+    font-family: 'Product Sans Light';
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1rem;
+    padding-right: 2rem;
+    list-style-type: circle;
+    
 }
-.btn-primary:hover {
-    background: #ff9e3b;
+
+
+
+.steps {
+    background: #00000060;
+    border-color: #ffffff57;
+    border-style: solid;
+    border-width: 1px;
+    width:400px;
+    height: 200px;
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.steps h3 {
+    font-family: 'Product Sans';
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+
+.steps p {
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Product Sans Light';
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 2rem;
+    padding-right: 2rem;
+    
+    
+    
+
 }
 
 footer {
-    background: #000000;
+    background: #ffffff;
     color: #fff;
     padding: 1rem;
     font-size: 0.9rem;
@@ -106,4 +215,59 @@ footer a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 3px solid #ffffff;
+}
+
+.nutInf {
+    background-color: #ffffff00;
+    margin-top: -30px;
+    font-family: 'Product Sans Light';
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1rem;
+    padding-right: 2rem;
+    list-style-type: none;
+}
+
+.download {
+    background-color: #ffffff00;
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Product Sans Light';
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1rem;
+    padding-right: 2rem;
+    list-style-type: none;
+    
+}
+
+.download a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Product Sans Medium';
+    font-size: 3rem;
+
+
+    background: #00000060;
+    border-color: #ffffff57;
+    border-style: solid;
+    border-width: 1px;
+    width: 600px;
+    height: 350px;
+
+
+    border-radius: 5px;
+}
+
+.impressum {
+    background-color: #ffffff00;
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Product Sans Light';
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 1rem;
+    padding-right: 2rem;
+    list-style-type: none;
+
 }
